@@ -67,8 +67,12 @@ form {
 }
 
 .leaflet-popup-content {
-  min-width: 150px;
-}
+  width: 500px !important;
+  max-width: 90vw; /* Make sure it is never wider than the screen itself */
+  max-height: 50vh !important;
+  overflow-y: scroll;
+} 
+
 
 .leaflet-popup-content img {
   width: 100%;
